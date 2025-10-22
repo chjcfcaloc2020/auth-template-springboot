@@ -19,7 +19,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @RequiredArgsConstructor
 public class SecurityConfiguration {
     private static final String[] WHITE_LIST = {
-            "/api/test", "/api/auth/login", "/api/users"
+            "/api/auth/login", "/api/users"
     };
     private final UserDetailsServiceCustomize userDetailsService;
     private final JwtDecoderConfiguration jwtDecoderConfiguration;
